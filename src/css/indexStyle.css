@@ -1,0 +1,158 @@
+ body {
+     background-color: black;
+     color: white;
+     font-family: 'Courier New', Courier, monospace;
+     font-size: 18px;
+     margin: 0;
+     padding: 0;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-attachment: fixed;
+     margin-top: 200px;
+     text-align: center;
+     background-image: url(bg/stars.gif)
+}
+.header {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     align-items: center;
+     background-color: #333;
+     padding: 10px;
+}
+.welcome {
+     font-size: 30px;
+     font-weight: bold;
+     margin: 0;
+     text-align: center;
+}
+ .menu {
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     margin: 0;
+     padding: 0;
+     list-style: none;
+}
+ .menu li {
+     margin-left: 10px;
+}
+ .menu li a {
+     color: white;
+     text-decoration: none;
+     padding: 10px;
+     border-radius: 5px;
+     transition: background-color 0.7s;
+     background-color: #222;
+}
+
+.content {
+     padding: 20px;
+     background-color: rgba(0, 0, 0, 0.6);
+     border-radius: 10px;
+     box-shadow: 0px 0px 5px #00ff00;
+     margin: 50px auto;
+     width: 550px;
+     animation: fadein 1s ease-in;
+     justify-content: center;
+}
+.selected{
+    box-shadow: 0 0 0 1.6px #00ff00;
+    
+}
+ h2 {
+     font-size: 30px;
+     font-weight: bold;
+     margin: 0;
+     text-align: center;
+     text-shadow: 2px 2px #000;
+}
+ p {
+     margin: 10px 0;
+     line-height: 1.5;
+     text-shadow: 1px 1px #000;
+}
+ .btn {
+     background-color: #1a1a1a;
+     border: none;
+     color: #00ff00;
+     padding: 10px 20px;
+     text-align: center;
+     text-decoration: none;
+     display: inline-block;
+     font-size: 16px;
+     border-radius: 30px;
+     transition: background-color 0.5s;
+     margin: 10px;
+     cursor: pointer;
+}
+ .btn:hover {
+     /*background-color: #2d2a2b;*/
+     box-shadow: 0px 0px 5px #00ff00;
+}
+.btn:active,
+button:active,
+img:active {
+  transform: translateY(1px);
+  box-shadow: none;
+  animation: click 0.1s ease-in-out;
+}
+h1 {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+
+@keyframes fadein {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes fadeinBottom {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .discord {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .social-links img,
+  .social-links button,
+  .social-links p,
+  .social-links h3 {
+    display: inline-block;
+    vertical-align: middle;
+    animation: fadeinBottom 1s ease-in;
+  }
+  .social-links img:hover{
+    box-shadow: 0px 2px 0px #FCF5E5;
+}
+  @keyframes click {
+    0% {
+      box-shadow: 0 0 0 1px #00ff00;
+    }
+    50% {
+      box-shadow: 0 0 30px 1px #00ff00;
+    }
+    100% {
+      box-shadow: 0 0 0 1px #00ff00;
+    }
+  }
